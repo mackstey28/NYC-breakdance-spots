@@ -9,10 +9,10 @@ let config = {
     maxZoom: 18,
 };
 // magnification with which the map will start
-const zoom = 12;
+const zoom = 11;
 // co-ordinates
-const lat = 40.74466;
-const lng = -73.94847;
+const lat = 40.75772609769318;
+const lng = -73.8784548449942;
 
 let points = [
     [40.75015418807684, -73.94879211615797, "Modega"],
