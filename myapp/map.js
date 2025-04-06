@@ -5,11 +5,11 @@
 
 // config map
 let config = {
-    minZoom: 7,
+    minZoom: 10,
     maxZoom: 18,
 };
 // magnification with which the map will start
-const zoom = 11;
+const zoom = 12;
 // co-ordinates
 const lat = 40.70776262013541;
 const lng = -73.93312344477506;
@@ -21,6 +21,7 @@ let points = [
     [40.64412262127368, -73.97576290819286, "360flow Dance Studio"],
     [40.71196466841747, -73.93563554499588, "Brooklyn Zoo"],
     [40.75156767880474, -73.83396400452277, "Al Oerter Recreation Center"],
+    [40.75372727254618, -73.93355527448894, "Ladies of Hip Hop"]
 ];
 
 // calling map
@@ -48,5 +49,26 @@ var Jawg_Terrain = L.tileLayer(
 // loop that adds many markers to the map
 for (let i = 0; i < points.length; i++) {
     const [lat, lng, popupText] = points[i];
-    marker = new L.marker([lat, lng]).bindPopup(popupText).addTo(map);
+    marker = new L.marker([lat, lng]).bindPopup(popupText).addTo(map).on("click", clickZoom);;
+}
+
+// // When this option is set, the map restricts the view to the given geographical bounds, bouncing the user back if the user tries to pan outside the view. To set the restriction dynamically, use setMaxBounds method.
+// // coordinates limiting the map
+// function getBounds() {
+//     const southWest = new L.LatLng(39.74995281966109, -75.5430254302778);
+//     const northEast = new L.LatLng(41.76508099917945, -72.55441482313798);
+//     return new L.LatLngBounds(southWest, northEast);
+// }
+
+// // set maxBounds
+// map.setMaxBounds(map.getBounds());
+
+// // zoom the map to the polyline
+// map.fitBounds(getBounds(), { reset: true });
+
+// set center map
+function clickZoom(e) {
+    map.setView(e.target.getLatLng(), zoom);
+    // pantTo version
+    // map.panTo(e.target.getLatLng());
 }
