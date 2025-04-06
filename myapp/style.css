@@ -32,12 +32,95 @@ body {
   background-color: #fff;
 }
 
+body { 
+  background: url("static/background-2.jpg") repeat 0 0;
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body { /*Firefox*/
+  background: url("../static/background-3.png") repeat 0 0;
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body { 
+  background-image: url("../static/background-2.jpg") repeat 0 0;
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-container {
+  margin: 40px auto 0px auto;
+}
+
+.title {
+  display:inline;
+
+  background-color: var(--darkreader-background-111111, #0d0e0e);
+  color: var(--darkreader-text-ffffff, #e8e6e3c7);
+
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 8px;
+}
+
 .logo {
-  height: 256px;
-  width: 256px;
+  display:inline;
+  height: 52px;
+  width: 52px;
 }
 
 .map-viewer {
-  height: 1024px;
-  width: 1024px;
+  margin: auto;
+  border-style: solid;
+  height: 80vh;
+  width: 100vh;
+}
+
+.menu {
+  margin: 25px auto 0px 80px;
+}
+
+.menu_button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* margin: -10px; */
+
+  background-color: var(--darkreader-background-111111, #0d0e0e);
+  color: var(--darkreader-text-ffffff, #e8e6e3c7);
+
+  padding: 12px;
+  font-size: 15px;
+  letter-spacing: 4px;
+
+  height: 42px;
+
+  cursor: pointer;
+}
+
+.text_body {
+  background-color: var(--darkreader-background-111111, #0d0e0e);
+  color: var(--darkreader-text-ffffff, #e8e6e3c7);
+
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 2px;
+
+  margin: auto;
 }

@@ -11,8 +11,8 @@ let config = {
 // magnification with which the map will start
 const zoom = 11;
 // co-ordinates
-const lat = 40.75772609769318;
-const lng = -73.8784548449942;
+const lat = 40.70776262013541;
+const lng = -73.93312344477506;
 
 let points = [
     [40.75015418807684, -73.94879211615797, "Modega"],
@@ -44,4 +44,9 @@ var Jawg_Terrain = L.tileLayer(
 for (let i = 0; i < points.length; i++) {
     const [lat, lng, popupText] = points[i];
     marker = new L.marker([lat, lng]).bindPopup(popupText).addTo(map);
+}
+
+function redirect(e) {
+    console.log(e);
+    window.location.href = "about.html"
 }
