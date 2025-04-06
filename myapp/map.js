@@ -40,13 +40,13 @@ var Jawg_Terrain = L.tileLayer(
     }
 ).addTo(map);
 
+// L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+//     attribution:
+//       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+//   }).addTo(map);
+
 // loop that adds many markers to the map
 for (let i = 0; i < points.length; i++) {
     const [lat, lng, popupText] = points[i];
     marker = new L.marker([lat, lng]).bindPopup(popupText).addTo(map);
-}
-
-function redirect(e) {
-    console.log(e);
-    window.location.href = "about.html"
 }

@@ -11,7 +11,8 @@ html {
 }
 
 body,
-html {
+html,
+#map {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -34,25 +35,7 @@ body {
 
 body { 
   background: url("static/background-2.jpg") repeat 0 0;
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-body { /*Firefox*/
-  background: url("../static/background-3.png") repeat 0 0;
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-body { 
+  background: url("../static/background-5.jpg") repeat 0 0; /*this*/
   background-image: url("../static/background-2.jpg") repeat 0 0;
   /* Full height */
   height: 100%; 
@@ -84,15 +67,19 @@ body {
   width: 52px;
 }
 
+.content {
+  display: block;
+}
+
 .map-viewer {
   margin: auto;
   border-style: solid;
-  height: 80vh;
+  height: 75vh;
   width: 100vh;
 }
 
 .menu {
-  margin: 25px auto 0px 80px;
+  margin: 25px auto -20px 80px;
 }
 
 .menu_button {
