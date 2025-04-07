@@ -1,5 +1,5 @@
 function navigateTo(e) {
-    window.location.href = e;
+    window.location.href = "nyc-breakdance-spots/" + e;
     history.pushState({}, "", e);
 
     fetch(path)
