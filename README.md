@@ -1,4 +1,4 @@
-Hi!
+Hi! Access this here: https://mackstey28.github.io/nyc-breakdance-spots/
 
 TODO:
 - Add own location
