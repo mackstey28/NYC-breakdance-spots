@@ -71,11 +71,11 @@ body {
 }
 
 #content {
-  margin: 100px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 .map-viewer {
-  margin: auto;
+  margin: 100px auto 0px auto;
   border-style: solid;
   height: 75vh;
   width: 100vh;
@@ -104,6 +104,19 @@ body {
   cursor: pointer;
 }
 
+.subheader {
+  background-color: var(--darkreader-background-111111, #0d0e0e);
+  color: var(--darkreader-text-ffffff, #ffffff);
+
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 2px;
+
+  text-align: center;
+
+  margin-bottom: -20px;
+}
+
 .text_body {
   background-color: var(--darkreader-background-111111, #0d0e0e);
   color: var(--darkreader-text-ffffff, #e8e6e3c7);
@@ -112,5 +125,19 @@ body {
   font-size: 25px;
   letter-spacing: 2px;
 
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.img {
+  background-color: var(--darkreader-background-111111, #0d0e0e);
+  color: var(--darkreader-text-ffffff, #e8e6e3c7);
+
+  padding: 18px;
+
+  max-height: 128px;
+  max-width: 128px;
+  display: block;
   margin: auto;
 }
