@@ -35,8 +35,8 @@ body {
 
 body { 
   background: url("static/background-5.jpg") repeat 0 0;
-  background: url("../static/background-5.jpg") repeat 0 0; /*this*/
-  background-image: url("../static/background-5.jpg") repeat 0 0;
+  background: url("./static/background-5.jpg") repeat 0 0; /*this*/
+  background-image: url("./static/background-5.jpg") repeat 0 0;
   /* Full height */
   height: 100%; 
 
