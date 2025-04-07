@@ -21,21 +21,25 @@
 </head>
 
 <body>
-  <header class="top-container">
+
+  <div class="top-container">
     <h1>
       <a class="title">NYC Breakdance Spots</a>
       <!-- <img class="logo" src="./static/logo.png"/> -->
     </h1>
+
     <h1 class="menu">
       <button class="menu_button" type="button" onclick="navigateTo('/')">Home</button>
       <button class="menu_button" type="button" onclick="navigateTo('/about')">About</button>
       <button class="menu_button" type="button" onclick="navigateTo('/contact')">Contact</button>
     </h1>
-  </header>
-  
-  <div class="map-viewer">
-    <div id="map"></div>
-    <script src="map.js"></script>
+  </div>
+
+  <div id="content">
+    <div class="map-viewer">
+      <div id="map"></div>
+      <script src="map.js"></script>
+    </div>
   </div>
 
 </body>

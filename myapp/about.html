@@ -13,22 +13,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="static/logo.png">
   <title>NYC Breakdance Spots</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/atom-one-dark-reasonable.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
 </head>
 
 <body>
-  <header class="top-container">
+
+  <div class="top-container">
     <h1>
       <a class="title">NYC Breakdance Spots</a>
       <!-- <img class="logo" src="./static/logo.png"/> -->
     </h1>
+
     <h1 class="menu">
       <button class="menu_button" type="button" onclick="navigateTo('/')">Home</button>
       <button class="menu_button" type="button" onclick="navigateTo('/about')">About</button>
       <button class="menu_button" type="button" onclick="navigateTo('/contact')">Contact</button>
     </h1>
-  </header>
+  </div>
 
-  <div>
+  <div id="content">
     <h1>
       <h1 class="title">About</h1>
       <!-- <img class="logo" src="./static/logo.png"/> -->
@@ -42,7 +47,8 @@
       <!-- <img class="logo" src="./static/logo.png"/> -->
     </h1>
     <h1 class="text_body">
-      Hello! I am a bboy currently residing in Queens. I work as a software engineer and built this website in my free time.
+      Hello! I am a bboy currently residing in Queens. I work as a software engineer and built this website in my free
+      time.
     </h1>
   </div>
 </body>
