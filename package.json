@@ -1,14 +1,10 @@
 {
-    "name": "leaflet-examples",
+    "name": "nyc-breakdance-spots",
     "version": "1.3.4",
-    "repository": "https://github.com/tomickigrzegorz/leaflet-examples.git",
-    "description": "A collection of examples of leaflet map usage",
-    "author": "Grzegorz Tomicki",
+    "repository": "https://github.com/mackstey28/nyc-breakdance-spots.git",
+    "description": "Map of all NYC bboy practice locations",
+    "author": "Maxwell Tang",
     "license": "MIT",
-    "keywords": [
-      "leaflet-examples",
-      "leaflet-maps"
-    ],
     "scripts": {
       "start": "http-server -o -p 3000"
     },
