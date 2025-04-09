@@ -8,3 +8,4 @@ TODO:
 - Filter by cost
 - Link to Google Maps page
 - Add animations
+- Add list view
