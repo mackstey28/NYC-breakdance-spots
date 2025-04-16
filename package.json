@@ -6,10 +6,13 @@
     "author": "Max",
     "license": "MIT",
     "scripts": {
-      "start": "http-server -o -p 3000"
+        "start": "http-server -o -p 3000"
     },
     "devDependencies": {
-      "http-server": "^14.1.1",
-      "prettier": "^3.3.2"
+        "http-server": "^14.1.1",
+        "prettier": "^3.3.2"
+    },
+    "dependencies": {
+        "leaflet-knn": "^0.1.0"
     }
-  }
+}
