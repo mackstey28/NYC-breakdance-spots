@@ -1,7 +1,4 @@
-/* eslint-disable no-undef */
-/**
- * Simple map
- */
+import { MinPriorityQueue, MaxPriorityQueue } from './node_modules/@datastructures-js/priority-queue';
 
 // config map
 let config = {
@@ -141,7 +138,11 @@ const customControl = L.Control.extend({
       // add marker
       this.addMarker(e).addTo(this.featureGroup()).addTo(map);
   
-      // add legend
+      // select 3 closest markers
+      console.log("On Location Found: ");
+      console.log(e.latlng);
+
+      selectNNearestSpots(e.latitude, e.longitude, 3);
     },
     // on location error
     onLocationError: function (e) {
@@ -208,3 +209,17 @@ const customControl = L.Control.extend({
 
   // adding new button to map control
 map.addControl(new customControl());
+
+function selectNNearestSpots(lat, lnd, n) {
+  const minHeap = new MinPriorityQueue();
+  
+  for (let i = 0; i < points.length; i++) {
+    let x = Math.abs(points[0] - lat);
+    let y = Math.abs(points[1] - lnd);
+    let dist = Math.sqrt(x^2 + y^2); // pythagorean theorem
+
+    minHeap.enqueue(points[i], dist)
+  }
+
+  console.log(minHeap.toArray());
+}
