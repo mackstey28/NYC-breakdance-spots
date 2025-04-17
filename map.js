@@ -202,3 +202,6 @@ const customControl = L.Control.extend({
       });
     },
   });
+
+// adding new button to map control
+map.addControl(new customControl());
