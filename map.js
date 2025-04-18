@@ -1,8 +1,3 @@
-/* eslint-disable no-undef */
-/**
- * Simple map
- */
-
 // config map
 let config = {
     minZoom: 10,
@@ -141,7 +136,9 @@ const customControl = L.Control.extend({
       // add marker
       this.addMarker(e).addTo(this.featureGroup()).addTo(map);
   
-      // add legend
+      // select 3 closest markers
+      console.log("On Location Found: ");
+      console.log(e.latlng);
     },
     // on location error
     onLocationError: function (e) {
@@ -206,5 +203,5 @@ const customControl = L.Control.extend({
     },
   });
 
-  // adding new button to map control
+// adding new button to map control
 map.addControl(new customControl());
